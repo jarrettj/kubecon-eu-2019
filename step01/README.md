@@ -371,7 +371,7 @@ ubuntu@ip-172-31-45-121:~/kubecon-eu-2019$ go run server.go
 ```
 
 Great the server is up and running! Now let's test it with a Go client (when you are done you can stop the server with
-^C).
+^C). 
 
 
 ### 6. Create a test client
@@ -478,6 +478,8 @@ ubuntu@ip-172-31-45-121:~/kubecon-eu-2019$ go run client.go localhost fluentd
 
 ubuntu@ip-172-31-45-121:~/kubecon-eu-2019$
 ```
+
+The server needs to be running in the background for the client to connect. 
 
 Cool! Working gRPC!! Well, there's a lot more to learn about gRPC but let's move on to containerd and see how we can
 run this RPC app in a container:  [../step02/README.md](../step02/README.md)
